@@ -3,15 +3,15 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
-// Firebase configuration
+// Firebase configuration with environment variable support
 const firebaseConfig = {
-  apiKey: "AIzaSyB0rccYxhSCcDrT0I3l2xGj0iAR_-sIu-M",
-  authDomain: "biographi-28eed.firebaseapp.com",
-  projectId: "biographi-28eed",
-  storageBucket: "biographi-28eed.firebasestorage.app",
-  messagingSenderId: "513138653331",
-  appId: "1:513138653331:web:879a746e8d185e8f31f566",
-  measurementId: "G-F4N6MCQYBL"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY || "AIzaSyB0rccYxhSCcDrT0I3l2xGj0iAR_-sIu-M",
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN || "biographi-28eed.firebaseapp.com",
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID || "biographi-28eed",
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET || "biographi-28eed.firebasestorage.app",
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID || "513138653331",
+    appId: process.env.REACT_APP_FIREBASE_APP_ID || "1:513138653331:web:879a746e8d185e8f31f566",
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID || "G-F4N6MCQYBL"
 };
 
 // Initialize Firebase

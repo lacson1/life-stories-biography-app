@@ -1,0 +1,11 @@
+<!-- This represents a 32x32 ICO favicon -->
+<!-- Convert the favicon.svg to ICO format using online tools or imagemagick -->
+<!-- Command: convert favicon.svg -resize 32x32 favicon.ico -->
+
+<!-- The ICO should contain the same design as favicon.svg:
+- Clean white background with subtle border
+- Amber gradient open book
+- Small red heart accent
+- Minimal, professional design
+- High contrast for small sizes
+--> 
